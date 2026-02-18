@@ -1,0 +1,117 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fdfaf7; /* Soft cream background */
+}
+
+/* Header & Navigation */
+h1 {
+    text-align: center;
+    color: #d35400; /* Burnt orange */
+    font-size: 2.5rem;
+    border-bottom: 3px double #d35400;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #e67e22;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    background-color: #d35400;
+}
+
+/* Recipe Section Styling */
+h2 {
+    color: #2c3e50;
+    border-left: 5px solid #e67e22;
+    padding-left: 15px;
+    margin-top: 40px;
+    clear: both; /* Ensures sections don't overlap with floating images */
+}
+
+/* Image Styling */
+img {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px 0 20px 20px;
+    border: 4px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/* Content Layout */
+mark {
+    background-color: #f1c40f;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin: 40px 0;
+}
+
+/* Procedure Lists */
+ol {
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+ol li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Back to Top Link */
+a[href="#top"] {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    text-decoration: none;
+}
+
+a[href="#top"]:hover {
+    color: #d35400;
+    text-decoration: underline;
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+    img {
+        float: none !important;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 100%;
+        height: auto;
+    }
+}
